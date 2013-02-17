@@ -1,0 +1,28 @@
+WebWorker
+
+WebWorker: "A thread in Javascript"
+
+http://dev.w3.org/html5/workers/
+
+reminder: 
+Javascript is monothreaded
+Javascript is massively event based
+Javascript is not done for massive computation
+
+Web workers:
+ - launch a computation without blocking the IO
+ - Split a computation on multiples cores (map reduces, ...)
+
+Shared web workers:
+a spec inside the spec
+
+ - shared states between windows (easier than window.postMessage for multiples windows)
+ - use a pop up/ windows just like an iframe 
+
+P2P communication avaialble with channelMessageing
+http://caniuse.com/#search=post
+
+uses cases: 
+http://blogs.msdn.com/b/davrous/archive/2011/07/08/introduction-aux-web-workers-d-html5-le-multithreading-version-javascript.aspx
+
+Does it really bring something ? http://www.sitepoint.com/multi-threading-javascript/

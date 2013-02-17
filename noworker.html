@@ -1,0 +1,41 @@
+<html>
+
+<body>
+	<div id="content" >
+		<ul>
+			<li><a href="#blocking"> Blocking </a></li>
+			<li><a href="#nonblocking"> Non Blocking </a></li>
+			<li><a href="#async"> Async </a></li>
+			<li><a href="#worker"> worker </a></li>
+			<li><a href="#workerasync"> worker Async </a></li>
+			<li><a href="#workerasyncbatch"> worker Async Batch</a></li>
+		</ul>
+	</div>
+</body>
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<script>
+
+var _importScript=function(url){
+ 	console.log(url)
+ 	var tag=document.createElement("script"); 
+ 	tag.type="text/javascript"; 
+ 	tag.src=url; 
+ 	document.body.appendChild(tag);
+};
+
+function start(){
+var slides={};
+
+var hash = document.location.hash;
+
+ 
+ if(hash) {
+ 	hash = hash.replace('#','');
+ 	_importScript("js/"+hash+".js");
+ }
+}
+
+window.addEventListener("message", start, false);
+
+</script>
+</html>
