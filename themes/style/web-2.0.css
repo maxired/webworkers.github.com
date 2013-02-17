@@ -38,12 +38,19 @@ background-color: #fefefe;
   -webkit-box-reflect: below -0.556em -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.3, transparent), color-stop(0.7, rgba(255, 255, 255, 0.1)), to(transparent));
   -moz-box-reflect: below -0.556em -moz-linear-gradient(top, transparent 0%, transparent 30%, rgba(255, 255, 255, 0.3) 100%);
 }
+.deck-container .deck-slide-scaler{
+  background-color: #eee;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  height:90%;
+  border-radius:6px;
+}
 .deck-container .slide h3 {
   color: #000;
 }
 .deck-container .slide pre {
   border-color: #cde;
-  background: #fff;
+  background: #fefefe;
   position: relative;
   z-index: auto;
   /* http://nicolasgallagher.com/css-drop-shadows-without-images/ */
