@@ -61,14 +61,13 @@ var workers=[];
 			if(event.data){
 				endDate = new Date();
 				duration=endDate - beginDate;
-				alert("Password found in "+duration+" sec : 	"+ event.data);		
+				alert("Password '"+event.data+"' found in "+duration+" msec : ");	
 			};
 
 			workers.forEach(function(w){
 				w.postMessage('stop');
-			delete w;
+				delete w;
 			})
-
 
 			if(cb)  cb();
 		};

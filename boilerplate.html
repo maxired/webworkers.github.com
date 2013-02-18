@@ -48,7 +48,7 @@
 <section class="slide">
 	
 	<h2>Reminder</h2>
-	<pre><p>Javascript is : </p><ul><li>Monothread</li><li>Massively event based</li><li>Not designed for massive computation</li></ul>
+	<pre><p>Javascript is : </p><ul><li>Monothread</li><li>Massively event based</li><li>Not designed for massive computation or Big Data</li></ul>
 <h3 style="color:red" class="slide">That was before Web Workers</h3>
 </pre>
 </section>
@@ -65,13 +65,25 @@
 <h2>How does it works ?</h2>
 <div class="slide"><script src="https://gist.github.com/maxired/4973382.js"></script></div></section>
 <section class="slide">
+<h2>self ?</h2>
+<blockquote>The self attribute must return the WorkerGlobalScope object itself.
+	<cite>http://www.w3.org/TR/workers/#workerglobalscope</cite></blockquote></section>
+<section class="slide">
 <h1>DEMO</h1>
 </section>
 
 <section class="slide">
 <h2>Context</h2>
 <p> MD5 Bruteforcing attack </p>
-<pre>Given an MD5 Hash, the goal is to find the seed</pre>
+<pre>Given an MD5 Hash '87e5064789e25778a3c36f02a99b61c4'</pre>
+<img src="./images/moussaka.jpg" />
+</section>
+
+<section class="slide">
+<h2>Context</h2>
+<p> MD5 Bruteforcing attack </p>
+<pre>Given an MD5 Hash '87e5064789e25778a3c36f02a99b61c4', what is the original meat ?</pre>
+<img src="./images/rawHorse.jpg"/>
 </section>
 
 <section class="slide">
@@ -154,7 +166,7 @@
 		<ul>
 			<li>Compute the dictionnary of possibilities</li>
 			<li>Create a pool of web Workers</li>
-			<lI>Map the dictionnary the the workers</li> 
+			<lI>Map the dictionnary to the workers</li> 
 		</ul>
 	</blockquote>
 	<pre style="position:relative">
